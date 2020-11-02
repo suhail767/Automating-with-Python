@@ -6,7 +6,6 @@ import re
 password = input()
 length = len(password)
 
-
 isCapital = re.compile(r'[A-Z]+')
 mo1 = isCapital.findall(password)
 
@@ -23,9 +22,6 @@ a =(len(mo1))
 b =(len(mo2))
 c =(len(mo3))
 d =(len(mo4))
-
-
-
 
 if (a==b==c>=1) and (length>=8) and d >=0:
     print('Password is Strong')
