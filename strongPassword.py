@@ -16,14 +16,18 @@ mo2 = isLower.findall(password)
 isDigit = re.compile(r'[0-9]+')
 mo3 = isDigit.findall(password)
 
+isAnythingElse = re.compile(r'.*')
+mo4 = isAnythingElse.findall(password)
+
 a =(len(mo1))
 b =(len(mo2))
 c =(len(mo3))
+d =(len(mo4))
 
 
 
 
-if (a==b==c>=1) and (length>=8):
+if (a==b==c>=1) and (length>=8) and d >=0:
     print('Password is Strong')
 
 else:
